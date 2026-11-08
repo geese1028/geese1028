@@ -14,10 +14,36 @@ Author of the 9-Volume **[Data Center Field Guides](https://datacenterfieldguide
 ## ⚡ Focus & First-Principles Engineering Domains
 
 - **High-Density AI Liquid Cooling (120–132 kW NVIDIA GB200 NVL72)**: Rack manifold thermal/hydraulic boundary splits, Darcy-Weisbach pressure drop ($\\Delta P$), Danfoss FD83 quick-disconnects, PG25 fluid chemistry, and liquid load bank acceptance gates.
-- **ASHRAE Level 0–6 Commissioning & Handover Governance**: Integrated Systems Testing (IST), 1-second PTP/NTP synchronized telemetry, witnessed floor testing vs. desk document review, and 200% punchlist retainage escrow refusal gates.
-- **Critical Operations State Machines (`SOP` / `MOP` / `EOP`)**: Strict separation of standing procedures (`SOP`), redundancy-altering switching with timed Point of No Return and back-out verification (`MOP`), and reflexive First-Safe-State fault stabilization (`EOP`).
-- **Atmospheric Reactivity & Corrosion (`ANSI/ISA-71.04-2013`)**: Paired Copper (`Cu < 300 Å/30d`) and Silver (`Ag < 200 Å/30d`) coulometric reduction coupon audits for RoHS lead-free AI hardware protection.
-- **Technical Due Diligence (`TDD`)**: Substation N-1 transformer bay verification, 5-stage nameplate-to-usable megawatt derating cascades, and 500-year hydrology audits.
+- **Data Center Commissioning Levels 1 to 5 (ASHRAE L0–L6 & IST)**: Factory Acceptance Testing (`L1`), Component QA/QC (`L2`), Pre-Functional Startup (`L3`), Functional Load Testing (`L4`), and Integrated Systems Testing (`L5`) with 200% retainage escrow refusal gates.
+- **Critical Operations State Machines (`SOP` / `MOP` / `EOP`)**: Standard Operating Procedure (`SOP`), Method of Procedure (`MOP`), and Emergency Operating Procedure (`EOP`) full forms, meaning, RACI authorization matrices, and Point of No Return (`PONR`) back-out governance.
+- **Atmospheric Reactivity & Carbon Media Corrosion Coupon Analysis (`ANSI/ISA-71.04-2013`)**: Paired Copper (`Cu < 300 Å/30d`) and Silver (`Ag < 200 Å/30d`) coulometric reduction coupon testing and activated carbon / potassium permanganate media breakthrough verification for RoHS lead-free AI hardware.
+- **Facility Location & Technical Due Diligence (`TDD`) Checklists**: Substation N-1 transformer bay verification, 5-stage nameplate-to-usable megawatt derating cascades, and 500-year hydrology audits for infrastructure assets.
+
+---
+
+## 🔥 Core Engineering Protocols & High-Intent Reference Checklists
+
+### 1. SOP, MOP, and EOP Meaning, Full Form & Switching Governance
+- **[SOP vs. MOP vs. EOP Meaning & Full Form: Data Center RACI Matrix and Field Authorization](https://datacenterfieldguides.com/blog/sop-mop-eop-matrix)** — Complete definition, full form (`Standard Operating Procedure`, `Method of Procedure`, `Emergency Operating Procedure`), state-transition equations, and RACI sign-off matrix.
+- **[SOP, MOP, and EOP Are Three Papers: Data Center Operational Boundaries](https://datacenterfieldguides.com/blog/sop-mop-eop)** — Structural and legal differences between `SOP`, `MOP`, and `EOP` in mission-critical data centers.
+- **[MOP Point of No Return (PONR): LOTO Isolation, Switching Scripts & Rollback Timing](https://datacenterfieldguides.com/blog/mop-point-of-no-return)** — Deterministic Method of Procedure (`MOP`) switching verification and abort triggers.
+- **[EOP Data Center Protocol: Why an EOP Stops at the First Safe State](https://datacenterfieldguides.com/blog/eop-stops)** — Why emergency operating procedures must lock the plant in the First Safe State without live troubleshooting.
+- **[NVIDIA GB200 NVL72 Liquid Cooling EOP: 5-Second Loss-of-Flow Ride-Through](https://datacenterfieldguides.com/blog/liquid-cooling-eop-nvl72)** — High-density liquid cooling emergency operating procedure and microchannel thermal ride-through math.
+
+### 2. Data Center Commissioning Levels 1–5 (L0 to L6) & Handover Refusal
+- **[Data Center Commissioning Levels 1 to 5 (L0–L6): 5 Levels of Commissioning, L2 Testing & IST](https://datacenterfieldguides.com/blog/commissioning-levels-0-to-6)** — Complete technical breakdown of the 5 levels of data center commissioning (`L1` FAT, `L2` QA/QC, `L3` Startup, `L4` FPT, `L5` IST) plus `L0` design review and `L6` handover sign-off.
+- **[Witnessed Test vs. Accepted Document: Field Commissioning Verification](https://datacenterfieldguides.com/blog/witnessed-or-a-document)** — Why commissioning certificates must separate live floor witness tests from desk-reviewed vendor PDFs.
+- **[Handover Signature & Custody Transfer: Why a Signature Is a Sentence](https://datacenterfieldguides.com/blog/a-signature-is-a-sentence)** — How to strike unsupported scope claims and enforce conditional acceptance before signing facility turnover.
+- **[The Data Center Commissioning Field Refusal Gates Cheat Sheet (50 Physical Veto Rules)](https://datacenterfieldguides.com/blog/field-refusal-gates-cheat-sheet)** — Deterministic pass/fail refusal gates for CxAs, Lead PEs, and TDD auditors.
+
+### 3. Data Center CFD Verification, Liquid Cooling & ANSI/ISA-71.04 Corrosion Coupon Analysis
+- **[Data Center CFD Verification Guide: Airflow Modeling vs. Physical Whitespace Measurements](https://datacenterfieldguides.com/blog/data-center-cfd-verification-guide)** — How to audit and verify Computational Fluid Dynamics (`CFD`) models against calibrated 3-tier rack RTDs and balometer airflow readings.
+- **[Carbon Media & Corrosion Coupon Analysis: ANSI/ISA-71.04-2013 Severity Rates & RoHS G1 Guide](https://datacenterfieldguides.com/blog/data-center-corrosion-coupon-isa-71-04-guide)** — Interpreting copper and silver corrosion coupon testing reports, `Class G1` limits, and chemical filtration carbon media breakthrough.
+- **[NVL72 Liquid Load Bank Testing: P&ID Hydraulics, Quick Disconnects & Boundary Acceptance](https://datacenterfieldguides.com/blog/nvl72-liquid-load-bank-testing-guide)** — Specifying and verifying rack-side liquid load banks for 120–132 kW AI racks.
+
+### 4. Facility Location & Infrastructure Asset Technical Due Diligence (TDD) Checklists
+- **[Facility Location Due Diligence Checklist: Data Center Site Selection & Property Audit](https://datacenterfieldguides.com/blog/data-center-facility-location-due-diligence)** — Auditing utility substation distance, LGIA interconnection queues, 500-year flood hydrology, and fiber splice diversity.
+- **[Data Center Technical Due Diligence Checklist: Infrastructure Asset & Engineering Audit](https://datacenterfieldguides.com/blog/data-center-technical-due-diligence-checklist)** — Engineering due diligence checklist for infrastructure assets, 2N power derating waterfall, and 72-hour fuel autonomy.
 
 ---
 
@@ -29,19 +55,6 @@ Author of the 9-Volume **[Data Center Field Guides](https://datacenterfieldguide
 | **[`datacenter-mcp`](https://github.com/geese1028/datacenter-mcp)** | Node.js Model Context Protocol (MCP) Server for NVL72 hydraulics, Darcy-Weisbach friction loss, MOP/EOP auditing, and ISA-71.04 corrosion severity. | [datacenterfieldguides.com/SKILL.md](https://datacenterfieldguides.com/SKILL.md) |
 | **[`dcfg-mcp`](https://github.com/geese1028/dcfg-mcp)** | Python (`uv`) MCP Server for liquid-loop hydraulic boundaries, `SOP`/`MOP`/`EOP` procedure classification, and 30-day coupon normalization. | [datacenterfieldguides.com/llms.txt](https://datacenterfieldguides.com/llms.txt) |
 | **[`cpkit`](https://github.com/geese1028/cpkit)** | Deterministic causal CPOP first-reversal & slope-break change-point detector used in 1-second telemetry analysis. | [A Hit Is a Time Protocol](https://datacenterfieldguides.com/blog/a-hit-is-a-time) |
-
----
-
-## 🔥 Featured Field Protocols & Technical Guides
-
-1. **[SOP, MOP, and EOP Are Three Papers: Data Center Switching & Emergency Governance](https://datacenterfieldguides.com/blog/sop-mop-eop)** — Structural and legal differences between Standard Operating Procedures (`SOP`), Methods of Procedure (`MOP`), and Emergency Operating Procedures (`EOP`).
-2. **[An EOP Stops at the First Safe State](https://datacenterfieldguides.com/blog/eop-stops)** — Why emergency procedures must terminate at deterministic mechanical/electrical stabilization rather than live troubleshooting.
-3. **[Data Center Corrosion Coupon Testing: ANSI/ISA-71.04-2013 Severity Rates & RoHS G1 Protection](https://datacenterfieldguides.com/blog/data-center-corrosion-coupon-isa-71-04-guide)** — Why copper-only coupons fail to protect lead-free silver solder and how to audit lab coulometric stripping reports.
-4. **[A Handover Signature Is a Sentence: Commissioning L4/L5 Custody Transfer](https://datacenterfieldguides.com/blog/a-signature-is-a-sentence)** — How to strike unsupported scope claims and enforce conditional acceptance before signing facility turnover.
-5. **[Witnessed Is Not the Same as Accepted a Document](https://datacenterfieldguides.com/blog/witnessed-or-a-document)** — Why commissioning certificates must separate live floor witness tests from desk-reviewed vendor PDFs.
-6. **[NVL72 Liquid Load Bank Testing: P&ID Hydraulics, Quick Disconnects & Boundary Acceptance](https://datacenterfieldguides.com/blog/nvl72-liquid-load-bank-testing-guide)** — Specifying and verifying rack-side liquid load banks for 120–132 kW AI racks.
-7. **[The Data Center Commissioning Field Refusal Gates Cheat Sheet (50 Physical Veto Rules)](https://datacenterfieldguides.com/blog/field-refusal-gates-cheat-sheet)** — Deterministic pass/fail refusal gates for CxAs, Lead PEs, and TDD auditors.
-8. **[Data Center Technical Due Diligence (TDD) & Facility Location Audit Checklist](https://datacenterfieldguides.com/blog/data-center-technical-due-diligence-checklist)** — Utility LGIA audits, 2N derating math, and physical site walk sampling rules.
 
 ---
 
